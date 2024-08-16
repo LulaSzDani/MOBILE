@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="insira seu e-mail"
+        app:boxBackgroundColor="@color/material_dynamic_neutral70"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:endIconMode="clear_text"
+        app:startIconContentDescription="usuario"
+        app:startIconDrawable="@drawable/baseline_people"
+
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:hint="insira sua senha"
+        app:boxBackgroundColor="@color/material_dynamic_neutral70"
+        app:boxCornerRadiusBottomEnd="100dp"
+        app:boxCornerRadiusBottomStart="100dp"
+        app:boxCornerRadiusTopEnd="100dp"
+        app:boxCornerRadiusTopStart="100dp"
+        app:endIconMode="password_toggle"
+        app:startIconContentDescription="senha"
+        app:startIconDrawable="@drawable/baseline_lock">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/txtSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:maxLength="20" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="insira seu nome"
+        app:boxBackgroundColor="@color/material_dynamic_neutral70"
+        app:boxCornerRadiusBottomEnd="100dp"
+        app:boxCornerRadiusBottomStart="100dp"
+        app:boxCornerRadiusTopEnd="100dp"
+        app:boxCornerRadiusTopStart="100dp"
+        app:startIconContentDescription="nome"
+        app:startIconDrawable="@drawable/baseline_drive_file_rename_outline"
+
+        >
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:hint="Entrar"
+        android:id="@+id/imgPrimeiro"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/txtSenha"
+        android:layout_marginTop="2dp"
+        android:src="#000000" />
+
+    <Button
+        android:hint="Sair"
+        android:id="@+id/segundo"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/txtSenha"
+        android:layout_alignParentRight="true"
+        android:src="#000000" />
+
+</RelativeLayout>
